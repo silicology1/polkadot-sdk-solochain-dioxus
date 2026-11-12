@@ -1,0 +1,10 @@
+# Ignore all target directories
+**/target/
+
+# Ignore all node_modules directories
+**/node_modules/
+
+**/chaindata
+
+node
+native

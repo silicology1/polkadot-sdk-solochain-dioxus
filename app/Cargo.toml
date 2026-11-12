@@ -1,0 +1,19 @@
+[package]
+name = "solochain-dioxus-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dioxus = { version = "0.7", features = [] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "process", "net", "time", "io-util", "sync"] }
+tokio-tungstenite = "0.27"
+futures-util = "0.3"
+serde_json = "1"
+ndk-context = "0.1"
+jni = "0.21"
+libc = "0.2"
+
+[features]
+default = ["mobile"]
+mobile = ["dioxus/mobile"]
+desktop = ["dioxus/desktop"] # `dx serve --platform desktop` runs a locally built node binary

@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = ["app"]
+default-members = ["app"]  # so `dx build` / `cargo build` from the root build the app
+
+[profile.release]
+opt-level = "z"
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "debuginfo"

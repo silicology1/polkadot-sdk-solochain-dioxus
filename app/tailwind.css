@@ -1,0 +1,10 @@
+/* Tailwind input for the Solochain Node dashboard.
+ *
+ * dx auto-detects this file (tailwind v4) and generates
+ * assets/tailwind.css with only the utilities actually used in the
+ * src directory. The generated file is what the app loads via
+ * asset!("/assets/tailwind.css") — no CDN needed at runtime.
+ */
+@import "tailwindcss";
+
+@source "./src";
